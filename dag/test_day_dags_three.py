@@ -7,9 +7,9 @@ from datetime import datetime, timedelta
 def test_day_dags3():
 
     # Define tasks
-    task_1 = BashOperator(task_id='brush_teeth4', bash_command='echo "Brushed teeth"', retries=3, retry_delay=timedelta(minutes=5))
-    task_2 = BashOperator(task_id='eat_breakfast4', bash_command='echo "Ate a healthy breakfast"', retries=3, retry_delay=timedelta(minutes=5))
-    task_3 = BashOperator(task_id='exercise4', bash_command='echo "Completed morning exercise"', retries=3, retry_delay=timedelta(minutes=5))
+    task_1 = BashOperator(task_id='brush_teeth5', bash_command='echo "Brushed teeth"', retries=3, retry_delay=timedelta(minutes=5))
+    task_2 = BashOperator(task_id='eat_breakfast5', bash_command='echo "Ate a healthy breakfast"', retries=3, retry_delay=timedelta(minutes=5))
+    task_3 = BashOperator(task_id='exercise5', bash_command='echo "Completed morning exercise"', retries=3, retry_delay=timedelta(minutes=5))
 
     # Define Python tasks using @task decorator
     @task
